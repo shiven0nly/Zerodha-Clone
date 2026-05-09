@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Metropolis:wght@600;700;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .font-headline-md { font-family: 'Metropolis', sans-serif; }
+        .font-display-lg { font-family: 'Metropolis', sans-serif; }
+        .font-headline-lg { font-family: 'Metropolis', sans-serif; }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed": "#6ffbbe",
+                        "secondary": "#555f71",
+                        "on-primary-container": "#76849f",
+                        "surface-variant": "#e0e3e5",
+                        "surface-dim": "#d8dadc",
+                        "on-tertiary-fixed": "#002113",
+                        "inverse-on-surface": "#eff1f3",
+                        "on-tertiary-container": "#009668",
+                        "outline-variant": "#c5c6cd",
+                        "tertiary": "#000000",
+                        "on-surface-variant": "#44474d",
+                        "secondary-fixed": "#d9e3f9",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#bdc7dc",
+                        "on-secondary-fixed": "#121c2c",
+                        "tertiary-container": "#002113",
+                        "on-secondary-container": "#596376",
+                        "background": "#f7f9fb",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "on-surface": "#191c1e",
+                        "on-tertiary-fixed-variant": "#005236",
+                        "secondary-container": "#d6e0f6",
+                        "on-secondary": "#ffffff",
+                        "inverse-primary": "#b9c7e4",
+                        "tertiary-fixed-dim": "#4edea3",
+                        "primary-container": "#0d1c32",
+                        "surface-container-high": "#e6e8ea",
+                        "error": "#ba1a1a",
+                        "surface": "#f7f9fb",
+                        "primary": "#000000",
+                        "surface-tint": "#515f78",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-error": "#ffffff",
+                        "on-primary-fixed": "#0d1c32",
+                        "on-background": "#191c1e",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-fixed-variant": "#3d4759",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-container-low": "#f2f4f6",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eceef0",
+                        "surface-bright": "#f7f9fb",
+                        "outline": "#75777e",
+                        "on-primary-fixed-variant": "#39475f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-padding-mobile": "20px",
+                        "section-gap": "64px",
+                        "unit": "4px",
+                        "gutter": "24px",
+                        "container-padding-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Metropolis"],
+                        "label-sm": ["Inter"],
+                        "headline-lg-mobile": ["Metropolis"],
+                        "label-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Metropolis"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Metropolis"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-container-padding-mobile md:px-container-padding-desktop h-20 bg-surface/80 backdrop-blur-md border-b border-outline-variant shadow-sm">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer" data-icon="arrow_back">arrow_back</span>
+<span class="font-headline-md text-headline-md font-black tracking-tight text-primary">LUXURY INVEST</span>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Investment Strategies</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">Portfolios</a>
+<a class="font-label-md text-label-md text-secondary hover:text-primary transition-colors" href="#">About Us</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<button class="font-label-md text-label-md text-secondary hover:text-primary transition-colors">Help</button>
+<button class="hidden md:block font-label-md text-label-md bg-primary text-on-primary px-6 py-2 rounded">Contact Advisor</button>
+</div>
+</header>
+<main class="flex-grow flex pt-20">
+<!-- Left Side: Visual Brand Message -->
+<div class="hidden lg:flex lg:w-1/2 relative bg-primary overflow-hidden">
+<img alt="Luxury Architecture" class="absolute inset-0 w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-VwahRxwQdC9yKFoa8WZVlANqjSTLfOns5e3ZWYnMV4l4QiTfzrtWGDTd9bAe5TlOw3nAt6ZxdlBiDE4pbAUDn779ai1rgkcqUR4oqIp3lBnJxhFNrj4laK0AnrlZs4SbB1cRFvEh44JBTEhuAzwvFWq9WS3xRiHBaue792sVNTzknJC1dMsXbxII_ZbO-6njCre58heHocZ_Pb1_SVpbBH2UCJvUBf3M9DxNVqcuQYtdFi2rQAzvMvwvZPKhOgzhsic8ilKWZ_Tk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+<div class="relative z-10 flex flex-col justify-end p-20 text-on-primary max-w-2xl">
+<h2 class="font-display-lg text-display-lg mb-6 leading-tight">Defining the Future of Private Wealth.</h2>
+<p class="font-body-lg text-body-lg text-secondary-fixed-dim/90 leading-relaxed mb-8">
+                    Join an exclusive network of investors accessing institutional-grade real estate and architecturally significant developments. Secure your legacy with disciplined, data-driven growth.
+                </p>
+<div class="flex gap-12">
+<div>
+<p class="font-headline-md text-headline-md font-bold text-tertiary-fixed">$4.2B+</p>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed-dim">Assets Managed</p>
+</div>
+<div>
+<p class="font-headline-md text-headline-md font-bold text-tertiary-fixed">15%</p>
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed-dim">Avg. Annual Return</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Signup Form -->
+<div class="w-full lg:w-1/2 flex items-center justify-center p-8 md:p-16 lg:p-24 bg-surface">
+<div class="w-full max-w-[480px]">
+<!-- Welcome Header -->
+<div class="mb-10">
+<h1 class="font-headline-lg text-headline-lg text-primary mb-4">Create Your Account</h1>
+<p class="font-body-md text-body-md text-secondary">Begin your journey towards architectural growth and financial security.</p>
+</div>
+<!-- Form -->
+<form class="space-y-6">
+<!-- Full Name -->
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase mb-2">Full Name</label>
+<input class="w-full h-14 px-4 bg-surface-container-lowest border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary transition-all font-body-md text-on-surface outline-none" placeholder="Johnathan Sterling" type="text"/>
+</div>
+<!-- Email Address -->
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase mb-2">Email Address</label>
+<input class="w-full h-14 px-4 bg-surface-container-lowest border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary transition-all font-body-md text-on-surface outline-none" placeholder="sterling@private.com" type="email"/>
+</div>
+<!-- Password -->
+<div>
+<label class="block font-label-sm text-label-sm text-secondary uppercase mb-2">Secure Password</label>
+<div class="relative">
+<input class="w-full h-14 px-4 bg-surface-container-lowest border border-outline-variant rounded focus:border-primary focus:ring-1 focus:ring-primary transition-all font-body-md text-on-surface outline-none" placeholder="••••••••••••" type="password"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-secondary cursor-pointer" data-icon="visibility">visibility</span>
+</div>
+<!-- Strength Indicator -->
+<div class="mt-3 flex items-center gap-2">
+<div class="flex-1 h-1 bg-surface-container-high rounded-full overflow-hidden">
+<div class="w-3/4 h-full bg-on-tertiary-container"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container">Strong</span>
+</div>
+</div>
+<!-- Primary Action -->
+<button class="w-full h-14 bg-primary text-on-primary font-label-md text-label-md rounded flex items-center justify-center gap-2 hover:opacity-90 active:scale-[0.98] transition-all" type="submit">
+                        Continue
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</form>
+<!-- Social Divider -->
+<div class="relative my-10">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-outline-variant"></div>
+</div>
+<div class="relative flex justify-center text-label-sm uppercase">
+<span class="bg-surface px-4 text-secondary">Or sign up with</span>
+</div>
+</div>
+<!-- Social Options -->
+<div class="grid grid-cols-2 gap-4 mb-10">
+<button class="flex items-center justify-center gap-3 h-14 border border-outline-variant rounded hover:bg-surface-container-low transition-colors bg-white">
+<span class="material-symbols-outlined text-primary" data-icon="google">google</span>
+<span class="font-label-md text-label-md text-on-surface">Google</span>
+</button>
+<button class="flex items-center justify-center gap-3 h-14 border border-outline-variant rounded hover:bg-surface-container-low transition-colors bg-white">
+<span class="material-symbols-outlined text-primary" data-icon="apple">ios</span>
+<span class="font-label-md text-label-md text-on-surface">Apple</span>
+</button>
+</div>
+<!-- Trust Signals -->
+<div class="flex flex-col items-center gap-4 py-6 border-t border-outline-variant">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-[18px]" data-icon="encrypted" data-weight="fill" style="font-variation-settings: 'FILL' 1;">encrypted</span>
+<span class="font-label-sm text-label-sm">Bank-level 256-bit AES encryption</span>
+</div>
+<p class="text-center font-label-sm text-label-sm text-secondary leading-relaxed px-4">
+                        By clicking Continue, you agree to our <a class="text-primary underline font-medium" href="#">Terms of Service</a> and acknowledge our <a class="text-primary underline font-medium" href="#">Privacy Policy</a>.
+                    </p>
+</div>
+<!-- Login Link -->
+<div class="mt-8 text-center">
+<p class="font-body-md text-body-md text-secondary">
+                        Already have an account? <a class="text-primary font-semibold hover:underline" href="#">Log In</a>
+</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-container-padding-mobile md:px-container-padding-desktop bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+<div class="flex flex-col gap-6">
+<span class="font-headline-sm text-headline-sm font-black text-primary">LUXURY INVEST</span>
+<p class="font-label-sm text-label-sm text-secondary max-w-sm leading-relaxed">
+                    © 2024 Private Wealth Management. Member FINRA/SIPC. Secure, disciplined investing for the modern era. All investments involve risk, including the loss of principal.
+                </p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-8">
+<div class="flex flex-col gap-4">
+<p class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Company</p>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Investment Strategy</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Support</p>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Help Center</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Contact Support</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Legal Disclosures</a>
+</div>
+<div class="flex flex-col gap-4">
+<p class="font-label-sm text-label-sm font-bold text-primary uppercase tracking-wider">Legal</p>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-secondary hover:text-primary transition-colors" href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
