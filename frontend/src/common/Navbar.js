@@ -7,6 +7,9 @@ function Navbar() {
   const { logout } = useContext(UserContext);
   const [cookies] = useCookies(['token']);
   const isLoggedIn = !!cookies.token;
+  const dashboardUrl = (typeof window !== 'undefined' && window.location.hostname && window.location.hostname.includes('localhost'))
+    ? 'http://localhost:3001'
+    : 'https://zerodha-dashboard-woad.vercel.app';
 
   return (
     <nav
@@ -76,7 +79,7 @@ function Navbar() {
                 </a>
                 <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="https://zerodha-dashboard-woad.vercel.app" target="_blank" rel="noopener noreferrer">
+                    <a className="dropdown-item" href={dashboardUrl} target="_blank" rel="noopener noreferrer">
                       Dashboard
                     </a>
                   </li>

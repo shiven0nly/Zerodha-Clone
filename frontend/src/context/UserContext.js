@@ -13,9 +13,9 @@ export const UserProvider = ({ children }) => {
         setUser(null);
         return;
       }
-      // You could also add a backend route to verify the token and get user info
-      // For now, we'll just assume the token existence means logged in if we don't have a verify endpoint
-      // Or we can decode the JWT if needed.
+      // If a token exists in cookies, mark user as logged in.
+      // If you have a backend verify endpoint you can call it here and populate user info.
+      setUser({ token: cookies.token });
     };
     verifyUser();
   }, [cookies.token]);

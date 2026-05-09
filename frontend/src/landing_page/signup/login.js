@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
-  const [cookies] = useCookies(["token"]);
+  const [cookies, setCookie] = useCookies(["token"]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -48,9 +48,15 @@ const Login = () => {
         },
         { withCredentials: true }
       );
-      const { success, message } = data;
+      const { success, message, token } = data;
       if (success) {
         handleSuccess(message);
+        // set a client cookie so UI can react to login immediately
+        try {
+          setCookie('token', token || 'loggedin', { path: '/' });
+        } catch (e) {
+          console.warn('setCookie failed', e);
+        }
         setTimeout(() => {
           navigate("/");
         }, 1000);
