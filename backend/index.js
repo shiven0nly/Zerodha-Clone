@@ -140,7 +140,7 @@ app.get("/addHoldings", async (req, res) => {
     },
   ];
 
-  tempHoldings.forEach((item) => {
+  await Promise.all(tempHoldings.map((item) => {
     let newHolding = new HoldingsModel({
       name: item.name,
       qty: item.qty,
@@ -149,9 +149,8 @@ app.get("/addHoldings", async (req, res) => {
       net: item.day,
       day: item.day,
     });
-
-    newHolding.save();
-  });
+    return newHolding.save();
+  }));
   res.send("Done!");
 });
 
@@ -179,7 +178,7 @@ app.get("/addPositions", async (req, res) => {
     },
   ];
 
-  tempPositions.forEach((item) => {
+  await Promise.all(tempPositions.map((item) => {
     let newPosition = new PositionsModel({
       product: item.product,
       name: item.name,
@@ -190,10 +189,9 @@ app.get("/addPositions", async (req, res) => {
       day: item.day,
       isLoss: item.isLoss,
     });
-
-    newPosition.save();
-  });
-  res.send("WOrking!");
+    return newPosition.save();
+  }));
+  res.send("Working!");
 });
 
 app.get("/allHoldings", async (req, res) => {
@@ -229,8 +227,14 @@ app.post("/login", Login);
 
 
 
-app.listen(PORT, () => {
-  console.log("App started!");
-  mongoose.connect(uri);
-  console.log("DB started!");
-});
+mongoose.connect(uri)
+  .then(() => console.log("DB started!"))
+  .catch((err) => console.error("DB connection error:", err));
+
+if (process.env.NODE_ENV !== "production") {
+  app.listen(PORT, () => {
+    console.log(`App started on port ${PORT}!`);
+  });
+}
+
+module.exports = app;
