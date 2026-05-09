@@ -6,7 +6,7 @@ const Positions = () => {
   const [addPositions, setaddPositions] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allPositions")
+    axios.get("https://zerodha-backend-six.vercel.app/allPositions")
       .then((res) => {
         setaddPositions(res.data);
       })

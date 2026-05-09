@@ -19,7 +19,9 @@ const Menu = () => {
 
   return (
     <div className="menu-container">
-      <img src="media/logo.svg" style={{ width: "100px" }} alt="Logo" />
+      <a href="https://zerodha-clone-bay-six.vercel.app">
+        <img src="media/logo.svg" style={{ width: "100px" }} alt="Logo" />
+      </a>
       <div className="menus" style={{ marginTop: "30px" }}>
         <ul>
           <li>

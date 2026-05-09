@@ -76,7 +76,7 @@ function Navbar() {
                 </a>
                 <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                   <li>
-                    <a className="dropdown-item" href="http://localhost:3001" target="_blank" rel="noopener noreferrer">
+                    <a className="dropdown-item" href="https://zerodha-dashboard-woad.vercel.app" target="_blank" rel="noopener noreferrer">
                       Dashboard
                     </a>
                   </li>

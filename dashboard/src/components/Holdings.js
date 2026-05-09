@@ -6,7 +6,7 @@ const Holdings = () => {
   const [addHoldings, setaddHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allHoldings")
+    axios.get("https://zerodha-backend-six.vercel.app/allHoldings")
       .then((res) => {
         setaddHoldings(res.data);
       })

@@ -9,7 +9,7 @@ import { CookiesProvider, useCookies } from 'react-cookie';
 const AuthWrapper = () => {
   const [cookies] = useCookies(['token']);
   if (!cookies.token) {
-    window.location.href = "http://localhost:3000/signup";
+    window.location.href = "https://zerodha-clone-bay-six.vercel.app/signup";
     return null;
   }
   return (

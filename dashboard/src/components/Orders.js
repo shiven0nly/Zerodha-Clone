@@ -6,7 +6,7 @@ const Orders = () => {
   const [addOrders, setaddOrders] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/allOrders")
+    axios.get("https://zerodha-backend-six.vercel.app/allOrders")
       .then((res) => {
         setaddOrders(res.data);
       })
