@@ -5,7 +5,7 @@ export const Brokerage = () => {
     <div className='container p-5 m-5 border-top'>
       <div className='row text-center'>
         <div className='col-8 p-4 border-end'>
-          <a href='' target='_blank' style={{textDecoration: "none"}}><h3 className='fs-5 text-primary'>Brokerage calculator</h3></a>
+          <a href='/' target='_blank' style={{textDecoration: "none"}}><h3 className='fs-5 text-primary'>Brokerage calculator</h3></a>
           <ul className='text-muted text-start lh-0.5 mt-3 d-flex flex-column gap-2' style={{fontSize: "0.85rem"}}>
             <li>Call & Trade and RMS auto-square-off charges: Additional charges of 50 + GST per order.</li>
             <li>DIgital contract notes will be sent via email.</li>
@@ -16,7 +16,7 @@ export const Brokerage = () => {
           </ul>
         </div>
         <div className='col-4 p-4'>
-          <a href='' target='_blank' style={{textDecoration: "none"}}><h3 className='fs-5 text-primary'>List of charges</h3></a>
+          <a href='/' target='_blank' style={{textDecoration: "none"}}><h3 className='fs-5 text-primary'>List of charges</h3></a>
         </div>
       </div>
     </div>

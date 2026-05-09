@@ -1,12 +1,11 @@
 import React, { createContext, useState, useEffect } from 'react';
-import axios from 'axios';
 import { useCookies } from 'react-cookie';
 
 export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [cookies, setCookie, removeCookie] = useCookies(['token']);
+  const [cookies, , removeCookie] = useCookies(['token']);
 
   useEffect(() => {
     const verifyUser = async () => {

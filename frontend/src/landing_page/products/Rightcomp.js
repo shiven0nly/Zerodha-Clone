@@ -12,7 +12,7 @@ export const Rightcomp = ({imageURL, productName, productDescription, learnMore}
           </div>
         </div>
         <div className='col-6 p-5'>
-          <img src={imageURL} />
+          <img src={imageURL} alt={productName} />
         </div>
       </div>
     </div>

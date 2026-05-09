@@ -6,7 +6,7 @@ export const Awards = () => {
       <div className='container mt-5 mb-5'>
         <div className= 'row'>
           <div className='col-6 p-5'>
-            <img src='media/largestBroker.svg' alt = "awards image" className='img-fluid mx-auto d-block px-4'>
+            <img src='media/largestBroker.svg' alt = "Largest stock broker awards" className='img-fluid mx-auto d-block px-4'>
           </img>
           </div>
           <div className = 'col-6 p-5'>

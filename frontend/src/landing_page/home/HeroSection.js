@@ -9,7 +9,7 @@ export const HeroSection = () => {
   return (
     <div className='container'>
       <div className= 'row text-center'>
-        <img style={{width: "70%"}} src='/media/homeHero.png' alt = "home hero image" className='img-fluid mx-auto d-block px-4 mb-5' />
+        <img style={{width: "70%"}} src='/media/homeHero.png' alt = "Zerodha Home Hero" className='img-fluid mx-auto d-block px-4 mb-5' />
       </div>
       <h1 className="fw-bolder text-center mt-5">Invest in Everything</h1>
       <p className='text-center fs-5 mb-4'>Online platform to invest in stocks, mutual funds and more.</p>

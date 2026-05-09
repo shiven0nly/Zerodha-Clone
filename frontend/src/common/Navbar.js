@@ -71,7 +71,7 @@ function Navbar() {
             
             {isLoggedIn && (
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a className="nav-link dropdown-toggle text-secondary" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i className="fa-solid fa-circle-user fs-4"></i>
                 </a>
                 <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">

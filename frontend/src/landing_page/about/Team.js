@@ -24,9 +24,9 @@ export const Team = () => {
             <p>Playing basketball is his zen.</p>
             <p>
               Connect on
-              <a target="_blank" href="https://nithinkamath.me/" title="Homepage" className="text-decoration-none"> Homepage</a> /
-              <a target="_blank" href="https://tradingqna.com/u/nithin/summary" title="TradingQnA" className="text-decoration-none"> TradingQnA</a> /
-              <a target="_blank" href="https://twitter.com/Nithin0dha" className="text-decoration-none"> Twitter</a>
+              <a target="_blank" rel="noreferrer" href="https://nithinkamath.me/" title="Homepage" className="text-decoration-none"> Homepage</a> /
+              <a target="_blank" rel="noreferrer" href="https://tradingqna.com/u/nithin/summary" title="TradingQnA" className="text-decoration-none"> TradingQnA</a> /
+              <a target="_blank" rel="noreferrer" href="https://twitter.com/Nithin0dha" className="text-decoration-none"> Twitter</a>
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ export const Team = () => {
             <h5>Nikhil Kamath</h5>
             <p className="text-muted">Co-founder & CFO</p>
             <p className="text-muted show-bio">
-              <a href="#" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
+              <a href="/" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
             </p>
             <div className="team-featured-desc text-start">
               <p>
@@ -54,7 +54,7 @@ export const Team = () => {
             <h5>Dr. Kailash Nadh</h5>
             <p className="text-muted">CTO</p>
             <p className="text-muted show-bio">
-              <a href="#" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
+              <a href="/" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
             </p>
             <div className="team-featured-desc text-start">
               <p>
@@ -70,7 +70,7 @@ export const Team = () => {
             <h5>Venu Madhav</h5>
             <p className="text-muted">COO</p>
             <p className="text-muted show-bio">
-              <a href="#" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
+              <a href="/" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
             </p>
             <div className="team-featured-desc text-start">
               <p>
@@ -89,7 +89,7 @@ export const Team = () => {
             <h5>Seema Patil</h5>
             <p className="text-muted">Director</p>
             <p className="text-muted show-bio">
-              <a href="#" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
+              <a href="/" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
             </p>
             <div className="team-featured-desc text-start">
               <p>
@@ -103,7 +103,7 @@ export const Team = () => {
             <h5>Karthik Rangappa</h5>
             <p className="text-muted">Chief of Education</p>
             <p className="text-muted show-bio">
-              <a href="#" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
+              <a href="/" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
             </p>
             <div className="team-featured-desc text-start">
               <p>
@@ -116,7 +116,7 @@ export const Team = () => {
             <h5>Austin Prakesh</h5>
             <p className="text-muted">Director Strategy</p>
             <p className="text-muted show-bio">
-              <a href="#" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
+              <a href="/" className="text-decoration-none">Bio <i className="fa-solid fa-angle-down"></i></a>
             </p>
             <div className="team-featured-desc text-start">
               <p>
