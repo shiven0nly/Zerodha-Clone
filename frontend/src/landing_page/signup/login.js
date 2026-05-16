@@ -42,7 +42,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://zerodha-backend-six.vercel.app/login",
+        "http://localhost:3002/login",
         {
           ...inputValue,
         },
